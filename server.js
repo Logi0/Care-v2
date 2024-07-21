@@ -19,10 +19,10 @@ app.use(express.json());
 app.use(bodyParser.json({ limit: "4mb" }));
 
 //routes
-const newUserRouter = require("./app/routers/user.route");
+const userRouter = require("./app/routers/user.route");
 
 //api routes
-app.use("/create-users", newUserRouter);
+app.use("/users", userRouter);
 
 const views = {
   index: path.join(__dirname, "/app/views/index.ejs"),

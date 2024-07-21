@@ -18,7 +18,6 @@ function sendUserInfo() {
   }
 
   const body = [name, surname, sex];
-
   const jsonbody = JSON.stringify(body);
   console.log(jsonbody);
   fetch(url, {
