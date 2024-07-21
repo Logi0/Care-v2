@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new user</title>
+
+    <%- include('partials/header'); %>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center mt-2">
+      <div class="container p-2">
+        <h2>Form</h2>
+
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="input_name" />
+        </div>
+        <div class="mb-3">
+          <label for="cogonme" class="form-label">Cognome</label>
+          <input type="text" class="form-control" id="input_surname" />
+        </div>
+        <div class="mb-3 form-check" id="check_male">
+          <input type="checkbox" class="form-check-input" id="input_male" />
+          <label class="form-check-label" for="male">Maschio</label>
+        </div>
+        <div class="mb-3 form-check" id="check_female">
+          <input type="checkbox" class="form-check-input" id="input_female" />
+          <label class="form-check-label" for="female">Femmina</label>
+        </div>
+        <input type="submit" name="submit" id="submitForm" value="Submit" />
+      </div>
+    </div>
+  </body>
+
+  <script></script>
+
+  <script
+    src="js/user.js"
+    id="ext-script"
+    defer
+    url="<%= process.env.WEB_URL %>upload"
+  ></script>
+</html>
